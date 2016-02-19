@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-size: 16px;
+    font-family: Arial;
+    line-height: 1.5em;
+    background-color: :#f4f4f4;
+}
+
+#container{
+    background: #333;
+    margin:30px auto;
+    width:50%;
+    min-height:400px;
+}
+
+header h1{
+    color:#fff;
+    font-size:22px;
+    padding: 15px 0 10px 10px;
+    border-bottom: 1px solid #fff;
+}
+
+#shouts{
+    width:90%;
+    background: #f4f4f4;
+    height: 400px;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+li.shout{
+    list-style: none;
+    padding: 8px;
+    border-bottom: 1px #ccc dotted;
+}
+
+.shout span{
+    color: #888;
+}
+
+#input{
+    width: 90%;
+    min-height: 80px;
+    margin: auto;
+    padding: 0;
+}
+
+#input input[type="text"]{
+    padding:3px;
+    margin-bottom: 20px;
+    border: #666;
+    width: 48%;
+    height:28px;
+}
+
+#input .shout-button{
+    padding:10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.error{
+    background: red;
+    padding:10px;
+    width:100%;
+    margin-bottom: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 746px){
+    #input input[type="text"]{
+       width:90%;
+    }
+    
+    #container{
+        width:100%;
+    }
+}
